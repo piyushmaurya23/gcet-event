@@ -20,6 +20,8 @@ import logging
 
 from .common import *  # noqa
 
+env.read_env()
+
 # SECRET CONFIGURATION
 # ------------------------------------------------------------------------------
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#secret-key
