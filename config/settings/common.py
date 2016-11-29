@@ -16,7 +16,7 @@ ROOT_DIR = environ.Path(__file__) - 3  # (event/config/settings/common.py - 3 = 
 APPS_DIR = ROOT_DIR.path('event')
 
 env = environ.Env()
-# env.read_env()
+env.read_env(str(ROOT_DIR.path('.env')))
 
 # APP CONFIGURATION
 # ------------------------------------------------------------------------------
